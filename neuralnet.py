@@ -498,31 +498,6 @@ def plot(train, validation, title, ylabel=None):
     plt.show()
 
 plot.fig_count = 0
-if __name__ == "__main__":
-    # Load the configuration.
-    config = load_config("./config.yaml")
 
-    # Create the model
-    model  = Neuralnetwork(config)
-
-    # Load the data
-    x_input, y_input = load_data(path="./data/", mode="train")
-    x_test,  y_test  = load_data(path="./data/", mode="test")
-    
-    # TODO: Create splits for validation data here.
-    # x_val, y_val = ...
-    ind  = int(x_input.shape[0]*0.99)
-    x_train, x_valid = x_input[:ind,:], x_input[ind:,:]
-    y_train, y_valid = y_input[:ind,:], y_input[ind:,:]
-
-    # TODO: train the model
-    train_losses, val_losses, train_accs, val_accs = train(model, x_train, y_train, x_valid, y_valid, config)
-
-    test_acc = test(model, x_test, y_test)
-
-    # TODO: Plots
-    print("Accuracy: ", test_acc)
-    plot(train_losses, val_losses, 'Loss')
-    plot(train_accs, val_accs, 'Loss')
 
     

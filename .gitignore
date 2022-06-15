@@ -1,10 +1,8 @@
-data/
 .DS_Store
-*cache*/
+__pycache__/
 .idea/
 .ipynb_checkpoints/
 *.pkl
 *.png
 *.csv
-tas500v1.1
 *.pt

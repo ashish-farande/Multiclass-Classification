@@ -4,10 +4,10 @@
 layer_specs: [3072, 64, 64, 10]
 
 # Type of non-linear activation function to be used for the layers.
-activation: "tanh"
+activation: "ReLU"
 
 # The learning rate to be used for training.
-learning_rate: 0.005
+learning_rate: 0.01
 
 # Number of training samples per batch to be passed to network
 batch_size: 128
@@ -22,7 +22,7 @@ early_stop: True
 early_stop_epoch: 5
 
 # Regularization constant
-L2_penalty: 0
+L2_penalty: 0.001
 
 # Use momentum for training
 momentum: True

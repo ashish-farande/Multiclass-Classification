@@ -1,17 +1,3 @@
-################################################################################
-# CSE 251B: Programming Assignment 2
-# Code snippet by Manjot Bilkhu
-# Winter 2020/2021/2022
-################################################################################
-# We've provided you with the dataset
-################################################################################
-# To install PyYaml, refer to the instructions for your system:
-# https://pyyaml.org/wiki/PyYAMLDocumentation
-################################################################################
-# If you don't have NumPy installed, please use the instructions here:
-# https://scipy.org/install.html
-################################################################################
-
 import neuralnet
 import numpy as np
 import yaml
@@ -24,13 +10,11 @@ def get_data(path):
     """
     return pickle.load(open(path + 'sanity.pkl', 'rb'))
 
-
 def load_config(path):
     """
     Load the configuration from config.yaml.
     """
     return yaml.load(open(path, 'r'), Loader=yaml.SafeLoader)
-
 
 def check_error(error, msg):
     """
@@ -40,7 +24,6 @@ def check_error(error, msg):
         print(f"{msg} is CORRECT")
     else:
         print(f"{msg} is WRONG")
-
 
 def sanity_layers(data):
     """
@@ -99,7 +82,6 @@ def sanity_layers(data):
 
     print(20 * "-", "\n")
 
-
 def sanity_network(data, default_config):
     """
     Check implementation of the neural network's forward pass and backward pass.
@@ -136,7 +118,6 @@ def sanity_network(data, default_config):
             check_error(error_d_b, f"Layer{layer_no}: Bias Gradient")
 
     print(20 * "-", "\n")
-
 
 if __name__ == '__main__':
     # Load the data and configuration.
