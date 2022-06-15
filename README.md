@@ -6,7 +6,7 @@ Neural Network with a hidden layer and investigated different tricks to improve 
 improved with the addition of the tricks of trade like Momentum, Regularization and Activation’s. In addition, the network was tested with different topology to
 understand the behavior against different architectures.
 
-Details on the underlying technical approaches and results can be found [here]([https://drive.google.com/file/d/1y61lZVzo-qwaNk2PqyKvexRQm6e0QCSn/view?usp=sharing](https://drive.google.com/file/d/1KXUIWZneUGjklwgtqW_fTHQc39bZWSNf/view?usp=sharing)
+Details on the underlying technical approaches and results can be found [here](https://drive.google.com/file/d/1KXUIWZneUGjklwgtqW_fTHQc39bZWSNf/view?usp=sharing)
 
 ### Execution
 
